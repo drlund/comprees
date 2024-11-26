@@ -2,7 +2,7 @@ import { ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { useContainer } from 'class-validator';
 import { AppModule } from './app.module';
-import { FiltraTodasAsExcecoes } from './filtros/filtra-excecoes-global';
+import { FiltraTodasAsExcecoes } from './recursos/filtros/filtra-excecoes-global';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
